@@ -1,0 +1,111 @@
+:root {
+  --cor-fundo: #000000;
+  --cor-principal: #5e1998; /* Roxo BTS */
+  --cor-texto: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(94, 25, 152, 0.95);
+  padding: 0.5rem;
+  z-index: 1000;
+  text-align: center;
+}
+
+nav button {
+  background: none;
+  border: 1px solid var(--cor-texto);
+  color: var(--cor-texto);
+  margin: 0.2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* Banner com imagem */
+.banner {
+  margin-top: 3rem; /* espaço abaixo do menu fixo */
+  text-align: center;
+  background-color: var(--cor-principal);
+  padding: 1rem;
+}
+
+.banner-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: var(--cor-texto);
+}
+
+main {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.galeria img {
+  width: 300px;
+  height: auto;
+  border: 2px solid var(--cor-principal);
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: var(--cor-principal);
+  text-align: center;
+  padding: 1rem;
+  color: var(--cor-texto);
+}
+
+/* Alto contraste */
+.high-contrast {
+  background-color: #ffffff;
+  color: #000000;
+}
+.high-contrast header,
+.high-contrast footer,
+.high-contrast nav {
+  background-color: #000000;
+  color: #ffffff;
+}
